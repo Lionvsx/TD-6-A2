@@ -19,6 +19,10 @@ namespace TD_6_A2
                 joueur.DeplacementSuivant();
                 if (joueur.EstArrive()) break;
             }
+            
+            Console.WriteLine("✅ Bravo vous avez atteint la fin du labyrinthe");
+            Console.WriteLine("Appuyez sur n'importe quelle touche pour quitter...");
+            Console.ReadKey();
         }
     }
 }

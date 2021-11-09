@@ -45,7 +45,7 @@ namespace TD_6_A2
             {
                 Console.Clear();
                 Console.WriteLine(this._labyrinthe.ToString());
-                Console.WriteLine("Vous ne pouvez pas vous déplacer sur cette case !");
+                Console.WriteLine("⚠️ Vous ne pouvez pas vous déplacer sur cette case !");
                 
             }
         }
