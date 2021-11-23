@@ -21,6 +21,8 @@ namespace TD_6_A2
                 {
                     if (schema[l][col].ToString() == "d") this.depart = new Position(l, col);
                     if (schema[l][col].ToString() == "a") this.arrivee = new Position(l, col);
+                    if ((l % nbLignes == 0 || col % nbColonnes == 0) && schema[l][col] != '*')
+                        throw new ArgumentException(nameof(schema));
                     this.matrice[l, col] = schema[l][col].ToString() == "*" ? 1 :
                         schema[l][col].ToString() == "-" ? 0 :
                         schema[l][col].ToString() == "d" ? 2 :
